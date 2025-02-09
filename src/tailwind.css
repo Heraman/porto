@@ -354,8 +354,12 @@
   }
 
   /* ======== About Section ======== */
+  .about {
+    @apply mb-[100px];
+  }
+
   .about .container-custom:nth-child(2) {
-    @apply mt-10 grid grid-cols-1 xl:grid-cols-[1fr_2fr] lg:grid-cols-[1.4fr_2fr] gap-x-10 xl:gap-x-11 md:grid-cols-[1fr_1fr] md:gap-x-8 mb-10;
+    @apply mt-10 grid grid-cols-1 xl:grid-cols-[1fr_2fr] lg:grid-cols-[1.4fr_2fr] gap-x-10 xl:gap-x-11 md:grid-cols-[1fr_1fr] md:gap-x-8;
   }
 
   .about .profile {

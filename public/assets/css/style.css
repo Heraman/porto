@@ -1301,9 +1301,11 @@
       color: var(--color-dark-accent);
     }
   }
+  .about {
+    margin-bottom: 100px;
+  }
   .about .container-custom:nth-child(2) {
     margin-top: calc(var(--spacing) * 10);
-    margin-bottom: calc(var(--spacing) * 10);
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     column-gap: calc(var(--spacing) * 10);
