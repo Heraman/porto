@@ -1302,7 +1302,7 @@
     }
   }
   .about {
-    margin-bottom: 100px;
+    margin-bottom: 190px;
   }
   .about .container-custom:nth-child(2) {
     margin-top: calc(var(--spacing) * 10);
@@ -1343,7 +1343,7 @@
   .about .items {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    row-gap: calc(var(--spacing) * 0.5);
+    row-gap: calc(var(--spacing) * 0);
     @media (width >= 40rem) {
       grid-template-columns: 1.5fr 1fr;
     }
