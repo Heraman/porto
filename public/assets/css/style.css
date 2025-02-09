@@ -1251,7 +1251,7 @@
       opacity: 0;
     }
   }
-  .about, .resume, .portfolio, .skills, .contact {
+  .about, .resume, .skills, .portfolio, .contact {
     margin-bottom: calc(var(--spacing) * 16);
     padding-top: 95px;
     @media (width >= 48rem) {
@@ -1303,6 +1303,7 @@
   }
   .about .container-custom:nth-child(2) {
     margin-top: calc(var(--spacing) * 10);
+    margin-bottom: calc(var(--spacing) * 10);
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     column-gap: calc(var(--spacing) * 10);
@@ -1347,27 +1348,15 @@
     @media (width >= 48rem) {
       grid-template-columns: 1.5fr 1fr;
     }
-    @media (width >= 48rem) {
-      row-gap: calc(var(--spacing) * 1.5);
-    }
     @media (width >= 64rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    @media (width >= 64rem) {
-      row-gap: calc(var(--spacing) * 1.5);
     }
   }
   .about .item {
     margin-top: calc(var(--spacing) * 3);
     display: flex;
     align-items: center;
-    gap: calc(var(--spacing) * 1);
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 4);
-    }
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 4);
-    }
+    gap: calc(var(--spacing) * 4);
   }
   .about .item a {
     &:hover {

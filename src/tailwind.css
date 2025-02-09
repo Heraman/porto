@@ -331,8 +331,8 @@
   /* ======== Title ======== */
   .about,
   .resume,
-  .portfolio,
   .skills,
+  .portfolio,
   .contact {
     @apply pt-[95px] lg:mb-28 md:mb-20 mb-16;
   }
@@ -355,7 +355,7 @@
 
   /* ======== About Section ======== */
   .about .container-custom:nth-child(2) {
-    @apply mt-10 grid grid-cols-1 xl:grid-cols-[1fr_2fr] lg:grid-cols-[1.4fr_2fr] gap-x-10 xl:gap-x-11 md:grid-cols-[1fr_1fr] md:gap-x-8;
+    @apply mt-10 grid grid-cols-1 xl:grid-cols-[1fr_2fr] lg:grid-cols-[1.4fr_2fr] gap-x-10 xl:gap-x-11 md:grid-cols-[1fr_1fr] md:gap-x-8 mb-10;
   }
 
   .about .profile {
@@ -371,11 +371,11 @@
   }
 
   .about .items {
-    @apply grid lg:grid-cols-2 md:grid-cols-[1.5fr_1fr] sm:grid-cols-[1.5fr_1fr] grid-cols-1 lg:gap-y-1.5 md:gap-y-1.5 gap-y-0.5;
+    @apply grid lg:grid-cols-2 md:grid-cols-[1.5fr_1fr] sm:grid-cols-[1.5fr_1fr] grid-cols-1 gap-y-0.5;
   }
 
   .about .item {
-    @apply flex items-center lg:gap-4 md:gap-4 gap-1 mt-3;
+    @apply flex items-center gap-4 mt-3;
   }
 
   .about .item a {
