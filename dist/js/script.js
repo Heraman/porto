@@ -233,24 +233,6 @@ document.addEventListener("DOMContentLoaded", function () {
   animateProgressBars(); // Jalankan saat halaman pertama kali dimuat
 });
 
-/* ================== 
-  Gallery Portfolio
-===================== */
-document.addEventListener("DOMContentLoaded", function () {
-  function makeInfiniteScroll(selector) {
-    const gallery = document.querySelector(selector);
-    if (!gallery) return;
-
-    const images = [...gallery.children];
-    const clone = images.map((img) => img.cloneNode(true));
-
-    clone.forEach((img) => gallery.appendChild(img));
-    }
-
-    makeInfiniteScroll(".gallery-top");
-    makeInfiniteScroll(".gallery-bottom");
-});
-
 /* ========================== 
   Contact Form Google Sheet 
 ============================= */

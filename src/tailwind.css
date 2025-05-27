@@ -198,53 +198,6 @@
     @apply text-light-text hover:text-light-secondary transition-all dark:text-dark-text dark:hover:text-dark-secondary;
   }
 
-  /* ======== Scroll Bar ======== */
-  /* ::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #cbcbcb;
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #06bff6;
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #0394c5;
-  }
-
-  body {
-    scrollbar-width: thin;
-    scrollbar-color: #06bff6 #afafaf;
-  }
-
-  .dark ::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  .dark ::-webkit-scrollbar-track {
-    background: #000000;
-    border-radius: 10px;
-  }
-
-  .dark ::-webkit-scrollbar-thumb {
-    background: #000000;
-    border-radius: 10px;
-  }
-
-  .dark ::-webkit-scrollbar-thumb:hover {
-    background: #000000;
-  }
-
-  .dark body {
-    scrollbar-width: thin;
-    scrollbar-color: #000000 #000000;
-  } */
-
   /* ======== Back To Top ======== */
   .backToTop {
     @apply cursor-pointer opacity-0 z-[999] fixed lg:bottom-[25px] lg:right-[25px] bottom-[20px] right-[20px] bg-light-accent rounded-[10px] w-[35px] h-[35px] lg:w-[40px] lg:h-[40px] flex items-center justify-center dark:bg-dark-accent;
@@ -443,85 +396,27 @@
     @apply mt-8 mb-7 max-w-[850px];
   }
 
-  @keyframes scrollLeft {
-    from {
+  @keyframes slideLeft {
+    0% {
       transform: translateX(0);
     }
-    to {
-      transform: translateX(-100%);
+    100% {
+      transform: translateX(-50%);
     }
   }
-
-  @keyframes scrollRight {
-    from {
-      transform: translateX(-100%);
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-50%);
     }
-    to {
+    100% {
       transform: translateX(0);
     }
   }
-
-  .portfolio .gallery-container {
-    @apply overflow-hidden whitespace-nowrap relative w-full;
+  .animate-slide-left {
+    animation: slideLeft 30s linear infinite;
   }
-
-  .portfolio .gallery-top {
-    @apply mb-5;
-    animation-name: scrollLeft;
-  }
-
-  .portfolio .gallery-bottom {
-    animation-name: scrollRight;
-  }
-
-  .portfolio .gallery-wrapper {
-    @apply flex gap-5 w-fit;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-
-  .portfolio .gallery-wrapper img {
-    @apply shrink-0 w-[240px] h-auto;
-  }
-
-  @media (max-width: 640px) {
-    .portfolio .gallery-wrapper {
-      @apply flex gap-5 w-fit;
-      animation-duration: 10s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-    }
-
-    .portfolio .gallery-wrapper img {
-      @apply shrink-0 w-[210px] h-auto;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .portfolio .gallery-wrapper {
-      @apply flex gap-5 w-fit;
-      animation-duration: 12s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-    }
-
-    .portfolio .gallery-wrapper img {
-      @apply shrink-0 w-[260px] h-auto;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .portfolio .gallery-wrapper {
-      @apply flex gap-5 w-fit;
-      animation-duration: 25s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-    }
-
-    .portfolio .gallery-wrapper img {
-      @apply shrink-0 w-[280px] h-auto;
-    }
+  .animate-slide-right {
+    animation: slideRight 30s linear infinite;
   }
 
   /* ======== Contact Section ======== */
